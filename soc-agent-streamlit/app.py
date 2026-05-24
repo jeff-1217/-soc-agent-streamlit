@@ -120,7 +120,7 @@ def get_groq_summary(ip, abuse_info, vt_info, bf_info, geo_info):
     except Exception as e:
         return f"Groq Request Failed: {str(e)}"
 
-if st.button("🚀 Analyze Logs", type="primary"):
+if st.button("Analyze Logs", type="primary"):
     if not log_input.strip():
         st.warning("Please paste some firewall logs first.")
     else:
